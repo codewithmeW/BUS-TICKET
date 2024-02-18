@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bus-Ticket</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,800;1,800&display=swap"
+      rel="stylesheet"
+    /> -->
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css">
+    <link rel="stylesheet" href="path/to/Raleway-Regular.woff2" type="text/css" font-family="Raleway" weight="800" style="font-display: swap;">
+    <style>
+        .btn-ghost {
+          font-family: "Raleway", sans-serif;
+          font-weight: 800;
+        }
+      </style>
+  </head>
+  <body>
+    <header class="container mx-auto max-w-[1180] px-24 mt-5 lg:px-24">
+      
+        <!-- -------------------NAVIGATION BAR section -------------- -->
+        <nav>
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              >
+                <li><a>Item 1</a></li>
+                <li>
+                  <a>Parent</a>
+                  <ul class="p-2">
+                    <li><a>Submenu 1</a></li>
+                    <li><a>Submenu 2</a></li>
+                  </ul>
+                </li>
+                <li><a>Item 3</a></li>
+              </ul>
+            </div>
+            <a class="btn btn-ghost text-xl font-bold">P-Ticket</a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 text-lg">
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Destination</a></li>
+              <li><a>Search</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <a class="btn w-32 h-12  border border-solid  text-xl  border-green-500  bg-green-200 text-green-600">BUS<img  src="images/bus-icon.png" alt=""></a>
+          </div>
+        </div>
+      </nav>
+
+
+      <!-- --------------- Banner section ---------- -->
+
+      <section class="mt-5 "> 
+        <div class="w-full h-[480px] rounded-2xl"> 
+          <div 
+            class="bg-[linear-gradient(90deg,rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url('./images/banner.png')]   rounded-2xl w-full h-full bg-cover bg-center flex flex-col items-center relative"> 
+            <h1 class="text-[3.5rem] font-extrabold font-raleway text-center leading-[70px] pt-16"><span 
+                class="text-white">End-to-End Travel with 
+              </span><br><span class="text-main text-green-500">P Paribahan</span></h1> 
+            <p class="text-white text-center w-8/12 pt-5">Your need is our command , we are here for you to your safe travle and make your jurny remarkable and remembrable </p> 
+            <button class="btn bg-main bg-green-600 border-0 text-base mt-9 font-raleway  font-bold text-black ">Buy Tickets</button> 
+            <div class="  absolute -bottom-11 flex justify-center gap-5"> 
+              <div class="bg-main pb-1 rounded-2xl border-green-500 border-b-4 "> 
+                <div class="bg-white rounded-2xl px-8 py-4 flex gap-2 items-center   "> 
+                  <img class="w-12 h-12" src="images/people.png" alt=""> 
+                  <div> 
+                    <h3 class="text-3xl font-bold pb-1.5">500K+</h3> 
+                    <p class="text-sm text[#686a71]">Registered users</p> 
+                  </div> 
+                </div> 
+              </div> 
+              <div class="bg-main pb-1 rounded-2xl border-green-500 border-b-4"> 
+                <div class="bg-white rounded-2xl px-8 py-4 flex gap-2 items-center"> 
+                  <img class="w-12 h-12" src="images/ticket-cupon.png" alt=""> 
+                  <div> 
+                    <h3 class="text-3xl font-bold pb-1.5">1.7 lacks</h3> 
+                    <p class="text-sm text[#686a71]">Tickets sold</p> 
+                  </div> 
+                </div> 
+              </div> 
+              <div class="bg-main pb-1 rounded-2xl border-green-500 border-b-4"> 
+                <div class="bg-white rounded-2xl px-8 py-4 flex gap-2 items-center"> 
+                  <img class="w-12 h-12" src="images/stoppage.png" alt=""> 
+                  <div> 
+                    <h3 class="text-3xl font-bold pb-1.5">80K+</h3> 
+                    <p class="text-sm text[#686a71]">Rental partners</p> 
+                  </div> 
+                </div> 
+              </div> 
+            </div> 
+          </div> 
+        </div> 
+      </section>
+    </header>
+    <main class="container mx-auto max-w-[1180] px-24 mt-5 lg:px-24">
+      <!-- ----------- offer section ---------- -->
+      
+      
+  
+    </main>
+    <footer class="bg-black"> 
+      <div class=" lg:px-24 px-4 max-w-[1200px] mx-auto  py-16"> 
+   
+        <div class="flex justify-between border-b-2 border-dashed border-gray-400  pb-14"> 
+          <div> 
+            <h3 class="text-3xl font-extrabold text-white">P-Ticket</h3> 
+            <p class="text-[#ffffffbf] pt-4">P-Ticket is a digital platform to make your<br> 
+              daily commuting better.</p> 
+          </div> 
+          <div> 
+            <p class="font-raleway text-xl pb-4 font-semibold text-white">Download our app</p> 
+          </div> 
+        </div> 
+        <div class="flex justify-between mt-4 "> 
+          <p class="text-[#ffffffa4]">@all rights reserved, P-Ticket services limited.2024</p> 
+          <div class="flex gap-3 text-white list-none justify-around"> 
+            <li class="a">Terms & condition</li> 
+            <li class="a">Return & refund policy</li> 
+            <li class="a">Privacy policy</li> 
+          </div> 
+        </div> 
+      </div> 
+    </footer>
+  </body>
+</html>
+
+
+  <!-- Your content here
